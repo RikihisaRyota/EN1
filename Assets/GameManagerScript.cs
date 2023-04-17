@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
-
+    //”z—ñ‚ÌéŒ¾
     int[] map;
 
     void PrintArray()
     {
         string debugText = "";
-        for (int i = 0; i < map.GetLength(0); i++)
+        for (int i = 0; i < map.Length; i++)
         {
             debugText += map[i].ToString() + ",";
         }
@@ -54,8 +54,8 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        map = new int[] { 0, 2, 2, 1, 0, 0, 2, 2, 0, };
+        //”z—ñ‚ÌÀ‘Ô‚Ì§ì‚Æ‰Šú‰»
+        map = new int[] { 0, 0, 0, 0, 0, 2, 1, 0, 0, };
 
         PrintArray();
     }
